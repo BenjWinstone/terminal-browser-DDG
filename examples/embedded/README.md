@@ -2,7 +2,7 @@
 
 terminal-browser allows embedding by a terminal program specifying where terminal browser should render inside its TUI using the [kitty graphics placeholder API](https://sw.kovidgoyal.net/kitty/graphics-protocol/#unicode-placeholders)
 
-Run it from this directory:
+
 
 ```
 npm install
