@@ -740,7 +740,7 @@ async function main(): Promise<number> {
     if (own[0] === "done") {
       own.shift();
       options.done = true;
-      if (passthrough.length > 0) fail("[PLACEHOLDER COPY]");
+      if (passthrough.length > 0) fail("error");
     }
     if (own.length > 0) fail(`unexpected ${own[0]} — put agent-browser arguments after --`);
     return actionCommand((await currentTerminal()).terminal, options);
