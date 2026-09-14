@@ -1,4 +1,4 @@
-import type { EngineKeyEvent, KeyMods } from "pixel-react";
+import type { EngineKeyEvent, KeyMods } from "@zenbu-labs/pixel";
 
 export type KeyBinding = KeyMods & { key: string };
 

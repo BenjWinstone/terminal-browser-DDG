@@ -1,5 +1,5 @@
 {
-  "name": "terminal-graphics-engine",
+  "name": "terminal-browser",
   "private": true,
   "scripts": {
     "build": "pnpm -r build",

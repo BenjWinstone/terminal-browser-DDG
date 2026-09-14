@@ -1,4 +1,4 @@
-import { Box, Image, Path, Text } from "pixel-react";
+import { Box, Image, Path, Text } from "@zenbu-labs/pixel";
 import type { Theme } from "./theme";
 import type { ChromeActions, ChromeLayout, PageMenuIcon, PageMenuItem, PageMenuView } from "./types";
 
@@ -46,7 +46,7 @@ export function PageContextMenu({
           inset: { top: y, left: x },
           width,
           flexDirection: "column",
-          background: theme.field,
+          background: theme.overlay,
           cornerRadius: rem * 0.45,
           border: { width: 1, color: theme.fieldBorder },
           overflow: "hidden",
