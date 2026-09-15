@@ -19,7 +19,7 @@ export function searchOrUrl(text: string, cwd?: string): string {
   if (localFile(trimmed, cwd)) return trimmed;
   if (!trimmed.includes(" ") && trimmed.includes(".")) return trimmed;
   if (/^[\w-]+:\d+(\/.*)?$/.test(trimmed)) return trimmed;
-  return `https://www.google.com/search?q=${encodeURIComponent(trimmed)}`;
+  return `https://duckduckgo.com/?q=${encodeURIComponent(trimmed)}`;
 }
 
 export function normalizeUrl(value: string, cwd?: string): string {
@@ -37,7 +37,7 @@ export function normalizeUrl(value: string, cwd?: string): string {
     const scheme = host === "localhost" || host === "127.0.0.1" ? "http" : "https";
     return new URL(`${scheme}://${input}`).toString();
   }
-  return `https://www.google.com/search?q=${encodeURIComponent(input)}`;
+  return `https://duckduckgo.com/?q=${encodeURIComponent(input)}`;
 }
 
 const HAS_AUTHORITY = /^[a-z][a-z0-9+.-]*:\/\//i;

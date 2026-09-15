@@ -1,5 +1,5 @@
 export async function fetchSuggestions(query: string, limit = 6): Promise<string[]> {
-  const url = `https://suggestqueries.google.com/complete/search?client=chrome&q=${encodeURIComponent(query)}`;
+  const url = `https://duckduckgo.com/ac/?type=list&q=${encodeURIComponent(query)}`;
   const body = await (await fetch(url)).text();
   const parsed = JSON.parse(body) as unknown[];
   const list = Array.isArray(parsed[1]) ? (parsed[1] as unknown[]) : [];
